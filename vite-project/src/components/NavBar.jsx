@@ -6,43 +6,28 @@ import plane from '../Images/plane.png'
 export const NavBar = () => {
   return (
     <>
-          <nav className="navbar" id="nav">
-              <div className="container-fluid">
-                 
-                      <a id="nav" className="navbar-brand mb-0 h1">Jorge L. Pérez Canales
-                      <p/>
-                      <span>Backend Developer Sr.</span>
-                      </a>
-                      
-                      
-                  <div className='contenedor'>   
-                  <Link  to={'/AboutMe'} id='imgna'><a className="nav-link" aria-current="page" href="#"> 
-                  <span><img src={account} className='icon'/></span>
-                  About Me 
-                  </a></Link>
-                 
-                  </div>
-                  <div>
-                  <Link to={'/Experience'}><a className="nav-link" href="#">
-                  <span><img src={idea} className='icon'/></span>
-                    Experience</a></Link>
-                 
-                  </div>
-                  <div>
-                  <Link to={'/Skills'}><a className="nav-link" href="#">
-                  <span><img src={skill} className='icon'/></span>
-                    Skills</a></Link>
-                  
-                  </div>
-                  <div>
-                  <Link to={'/ContactMe'}><a className="nav-link" href="#">
-                  <span><img src={plane} className='icon'/></span>
-                    Contact me</a></Link>
-                  </div>
-
-              </div>
-
-          </nav>
+         <header>
+         <nav>
+         <div className='header-name'>
+        <p>Jorge Luis Perez Canales</p>
+          <span>Sr Back-end Developer</span>
+          </div>
+        <section className="header-icon-container">
+            <div className="icons">
+            <Link to={'/AboutMe'}><a href="/"><img src={account}/></a> </Link> 
+            <Link to={'/Experience'}>   <a href="/"><img src={idea}/></a> </Link> 
+            <Link to={'/Skills'}> <a href="/"><img src={skill}/></a> </Link> 
+            <Link to={'/ContactMe'}>    <a href="/"><img src={plane}/></a> </Link> 
+            </div>
+            <div className="header-span-container">
+               <Link to={'/AboutMe'}> <span>About Me</span> </Link>
+               <Link to={'/Experience'}> <span>Experience</span> </Link>
+               <Link to={'/Skills'}> <span>skills</span> </Link>
+               <Link to={'/ContactMe'}><span>Contact Me</span></Link> 
+            </div>
+        </section>    
+        </nav>
+    </header>
 
     </>
   )
