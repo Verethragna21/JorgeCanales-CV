@@ -1,11 +1,17 @@
 
-//import './App.css'
+import { RouterProvider} from "react-router-dom";
+import './App.css'
+import { RouterAuth } from "./Routes/Auth";
 
 export const App = () => {
  
 
   return (
-        <h1>CV</h1>
+        <>
+       
+        <RouterProvider router={RouterAuth}/>
+      
+        </>
   )
 }
 
