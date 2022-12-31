@@ -11,7 +11,7 @@ export const NavBar = () => {
           <div className='navbar-brand'>
           <p className='title-ing'> Ing. Jorge Luis Pérez Canales</p>
           </div>
-         <ul className='navbar-nav'>
+         <ul className=''>
          <li className='nav-item'>
              <Link to={'/AboutMe'}>
                 <img src={account} className='icon'/>
