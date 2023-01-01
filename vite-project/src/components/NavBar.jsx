@@ -11,26 +11,26 @@ export const NavBar = () => {
           <div className='navbar-brand'>
           <p className='title-ing'> Ing. Jorge Luis Pérez Canales</p>
           </div>
-         <ul className=''>
-         <li className='nav-item'>
+         <ul>
+         <li>
              <Link to={'/AboutMe'}>
                 <img src={account} className='icon'/>
                 <a className='name'>About Me</a>
               </Link>
             </li>
-            <li className='nav-item'>
+            <li>
              <Link to={'/Experience'}>
                 <img src={idea} className='icon'/>
                 <a className='name'>Experience</a>
               </Link>
             </li>
-            <li className='nav-item'>
+            <li >
              <Link to={'/Skills'}>
                 <img src={skill} className='icon'/>
                 <a className='name'>Skills</a>
               </Link>
             </li>
-            <li className='nav-item'>
+            <li >
              <Link to={'/ContactMe'}>
                 <img src={plane} className='icon'/>
                 <a className='name'>Contact Me</a>

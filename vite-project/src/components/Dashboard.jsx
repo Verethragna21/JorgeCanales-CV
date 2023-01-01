@@ -6,6 +6,9 @@ export const Dashboard = () => {
   return (
     <>
     <NavBar/>
+      <div className='banner'>
+        <img />
+      </div>
      <Outlet/>
     </>
   )
